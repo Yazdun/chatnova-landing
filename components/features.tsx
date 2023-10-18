@@ -6,8 +6,7 @@ import { BsFillDatabaseFill } from 'react-icons/bs'
 import { HiOutlineChatBubbleBottomCenterText } from 'react-icons/hi2'
 import { HiDotsHorizontal } from 'react-icons/hi'
 import { twMerge } from 'tailwind-merge'
-import { AiOutlineCheck } from 'react-icons/ai'
-import { TbBrandNextjs } from 'react-icons/tb'
+import { AiOutlineCheck, AiTwotoneFire } from 'react-icons/ai'
 import {
   SiVercel,
   SiNextdotjs,
@@ -15,12 +14,16 @@ import {
   SiSupabase,
   SiTailwindcss,
 } from 'react-icons/si'
+import { PiCrownSimpleBold } from 'react-icons/pi'
 
 export const Features = () => {
   return (
-    <div className="grid gap-10 mb-40">
+    <div className="grid gap-10 mb-20">
       <div className="container grid gap-5 text-center">
-        <h2 className="text-2xl lg:text-4xl max-w-xl m-auto">
+        <h2 className="text-2xl lg:text-4xl max-w-xl m-auto flex flex-col items-center">
+          <div className=" text-orange-400 rotate-10">
+            <PiCrownSimpleBold />
+          </div>
           Build and ship custom AI chatbots in minutes
         </h2>
         <p className="leading-7">
@@ -183,7 +186,7 @@ const data = [
     tech: [
       {
         title: 'Best AI chatbot on the market!',
-        icon: '',
+        icon: <AiTwotoneFire />,
       },
     ],
     icon: <HiDotsHorizontal />,

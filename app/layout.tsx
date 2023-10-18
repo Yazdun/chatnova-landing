@@ -5,6 +5,7 @@ import { Theme } from '@radix-ui/themes'
 import './globals.css'
 import { twMerge } from 'tailwind-merge'
 import { Navigation } from '@/components/navigation'
+import { Footer } from '@/components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <Theme appearance="dark">
           <Navigation />
           {children}
+          <Footer />
         </Theme>
       </body>
     </html>
