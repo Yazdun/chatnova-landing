@@ -7,6 +7,14 @@ import { HiOutlineChatBubbleBottomCenterText } from 'react-icons/hi2'
 import { HiDotsHorizontal } from 'react-icons/hi'
 import { twMerge } from 'tailwind-merge'
 import { AiOutlineCheck } from 'react-icons/ai'
+import { TbBrandNextjs } from 'react-icons/tb'
+import {
+  SiVercel,
+  SiNextdotjs,
+  SiRadixui,
+  SiSupabase,
+  SiTailwindcss,
+} from 'react-icons/si'
 
 export const Features = () => {
   return (
@@ -68,7 +76,18 @@ const Slider = () => {
         ))}
       </ul>
       <div className="bg-neutral-900 border-t-2 border-neutral-800 border-b-2  py-10">
-        <div className="container">
+        <div className="container grid gap-5">
+          <ul className="flex text-lg text-white">
+            {data[activeTab].tech.map((item, idx) => {
+              return (
+                <li key={item.title} className="flex items-center gap-1">
+                  {idx > 0 && <span className="ml-1">+</span>}
+                  <div>{item.icon}</div>
+                  {item.title}
+                </li>
+              )
+            })}
+          </ul>
           <ul className="grid gap-3 text-neutral-300">
             {data[activeTab].items.map(item => {
               return (
@@ -90,6 +109,16 @@ const Slider = () => {
 const data = [
   {
     feature: 'Chatbot',
+    tech: [
+      {
+        title: 'Next.js',
+        icon: <SiNextdotjs />,
+      },
+      {
+        title: 'Vercel SDK',
+        icon: <SiVercel />,
+      },
+    ],
     icon: <HiOutlineChatBubbleBottomCenterText />,
     items: [
       'Blazing fast real-time AI response generation.',
@@ -100,6 +129,12 @@ const data = [
   },
   {
     feature: 'Database',
+    tech: [
+      {
+        title: 'Supabase',
+        icon: <SiSupabase />,
+      },
+    ],
     icon: <BsFillDatabaseFill />,
     items: [
       'Real-time capabilities, receive instant updates when data changes in the database',
@@ -110,6 +145,12 @@ const data = [
   },
   {
     feature: 'Auth',
+    tech: [
+      {
+        title: 'Supabase Built-in Authentication',
+        icon: <SiSupabase />,
+      },
+    ],
     icon: <FaKey />,
     items: [
       'Role-based user authenticaion right out of the box',
@@ -120,6 +161,16 @@ const data = [
 
   {
     feature: 'Styling',
+    tech: [
+      {
+        title: 'Radix UI',
+        icon: <SiRadixui />,
+      },
+      {
+        title: 'TailwindCSS',
+        icon: <SiTailwindcss />,
+      },
+    ],
     icon: <FaPaintBrush />,
     items: [
       'Built upon Radix UI and TailwindCSS.',
@@ -129,6 +180,12 @@ const data = [
   },
   {
     feature: 'More',
+    tech: [
+      {
+        title: 'Best AI chatbot on the market!',
+        icon: '',
+      },
+    ],
     icon: <HiDotsHorizontal />,
     items: [
       'Fully free and open-sourced',
