@@ -4,6 +4,7 @@ import '@radix-ui/themes/styles.css'
 import { Theme } from '@radix-ui/themes'
 import './globals.css'
 import { twMerge } from 'tailwind-merge'
+import { Navigation } from '@/components/navigation'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={twMerge(inter.className)}>
-        <Theme appearance="dark">{children}</Theme>
+        <Theme appearance="dark">
+          <Navigation />
+          {children}
+        </Theme>
       </body>
     </html>
   )

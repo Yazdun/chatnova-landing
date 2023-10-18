@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+p {
+  @apply text-sm md:text-base leading-6 md:leading-normal;
+}
