@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Chat Nova | Custom AI Chatbot',
   description:
-    'Chat Nova will help you to build a custom AI Chatbot with full authentication and database management flow in a just few minutes',
+    'Chat Nova will help you build a custom AI Chatbot with full authentication and database management flow in a just few minutes',
 }
 
 export default function RootLayout({

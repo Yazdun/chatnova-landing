@@ -141,7 +141,6 @@ const data = [
     items: [
       'Blazing fast real-time AI response generation.',
       "Professional UI/UX crafted by industry's experts",
-      "Storing user's full conversation history in the database.",
       "Storing user's full chat history in the database.",
     ],
   },
@@ -157,8 +156,7 @@ const data = [
     items: [
       'Real-time capabilities, receive instant updates when data changes in the database',
       'Robust data management and scalability.',
-      'Built-in authentication and authorization systems.',
-      'Automatically generated RESTful APIs for your database, allowing you to easily interact with your data from different platforms and devices.',
+      'Automatically generated RESTful APIs for your database.',
     ],
   },
   {
@@ -208,7 +206,6 @@ const data = [
     items: [
       'Fully free and open-sourced',
       'Created and maintained by industry experts.',
-      'Lifetime support and updates.',
       'Already being used by enterprised companies.',
     ],
   },
