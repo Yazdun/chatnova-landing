@@ -8,7 +8,7 @@ export const Navigation = () => {
       <nav className="container">
         <a href="https://github.com/Kyler18/chat-nova" target="_blank">
           <div className="flex gap-1 items-center w-full justify-center">
-            Chatnova is now fully
+            Chat Nova is now fully
             <span className="hidden md:flex">free and</span> open-sourced,{' '}
             <span className="underline">Try it out!</span>
             🎉

@@ -10,9 +10,9 @@ import { Footer } from '@/components/footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'ChatNova | Custom AI Chatbot',
+  title: 'Chat Nova | Custom AI Chatbot',
   description:
-    'ChatNova will help you to build a custom AI Chatbot with full authentication and database management flow in a just few minutes',
+    'Chat Nova will help you to build a custom AI Chatbot with full authentication and database management flow in a just few minutes',
 }
 
 export default function RootLayout({
@@ -23,21 +23,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta property="og:title" content="ChatNova" />
+        <meta property="og:title" content="Chat Nova" />
         <meta
           property="og:description"
-          content="ChatNova will help you to build a custom AI Chatbot with full authentication and database management flow in a just few minutes"
+          content="Chat Nova will help you to build a custom AI Chatbot with full authentication and database management flow in a just few minutes"
         />
         <meta property="og:url" content="https://www.chatnova.co" />
-        <meta property="og:site_name" content="ChatNova" />
+        <meta property="og:site_name" content="Chat Nova" />
         <meta property="og:image" content="/og.png" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="https://www.chatnova.co" />
-        <meta name="twitter:title" content="ChatNova" />
+        <meta name="twitter:title" content="Chat Nova" />
         <meta
           name="twitter:description"
-          content="ChatNova will help you to build a custom AI Chatbot with full authentication and database management flow in a just few minutes!"
+          content="Chat Nova will help you to build a custom AI Chatbot with full authentication and database management flow in a just few minutes!"
         />
         <meta name="twitter:image" content="/og.png" />
         <meta name="next-size-adjust" />

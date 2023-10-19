@@ -29,8 +29,8 @@ export const Features = () => {
         </h2>
         <p className="leading-7">
           You can build your own chatbots with our easy to use chatbot
-          boilerplate code. ChatNova supports full role-based authentication and
-          authorization, chat history, PDF and documents upload!
+          boilerplate code. Chat Nova supports full role-based authentication
+          and authorization, chat history, PDF and documents upload!
         </p>
       </div>
       <Slider />

@@ -5,10 +5,10 @@ export const Video = () => {
   return (
     <div className="container flex flex-col items-center text-center gap-5">
       <h2 className="text-2xl lg:text-4xl max-w-2xl m-auto flex flex-col items-center">
-        ChatNova in 3 Minutes!
+        Chat Nova in 3 Minutes!
       </h2>
       <p>
-        See how we successfully integrated ChatNova into a business in this
+        See how we successfully integrated Chat Nova into a business in this
         short video ( Kai is too slow 3x the video 😒 )
       </p>
 

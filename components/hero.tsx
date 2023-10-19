@@ -18,7 +18,7 @@ export const Hero = () => {
         </div>
         <div className="flex lg:items-start items-center flex-col lg:text-left gap-5 text-center">
           <Badge color="gray">
-            ChatNova is now fully free and open-sourced!
+            Chat Nova is now fully free and open-sourced!
           </Badge>
 
           <h1 className="md:text-3xl text-xl leading-10  flex flex-col gap-1 lg:text-4xl">
@@ -31,7 +31,7 @@ export const Hero = () => {
             </div>
           </h1>
           <p className="text-zinc-300 max-w-xl">
-            ChatNova will help you to build a custom{' '}
+            Chat Nova will help you to build a custom{' '}
             <span className="text-white">AI Chatbot</span> with{' '}
             <span className="text-white"> full authentication</span> and{' '}
             <span className="text-white">database management</span> flow in a
