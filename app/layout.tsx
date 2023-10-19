@@ -30,7 +30,7 @@ export default function RootLayout({
         />
         <meta property="og:url" content="https://www.chatnova.co" />
         <meta property="og:site_name" content="ChatNova" />
-        <meta property="og:image" content="https://shipfa.st/shareMain.png" />
+        <meta property="og:image" content="/og.png" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="https://www.chatnova.co" />
