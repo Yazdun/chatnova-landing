@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Video = () => {
   return (
-    <div className="container flex flex-col items-center text-center gap-5">
+    <div className="container flex flex-col items-center text-center my-20 gap-5">
       <h2 className="text-2xl lg:text-4xl max-w-2xl m-auto flex flex-col items-center">
         Chat Nova in 3 Minutes!
       </h2>
