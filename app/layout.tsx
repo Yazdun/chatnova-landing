@@ -26,20 +26,18 @@ export default function RootLayout({
         <meta property="og:title" content="ChatNova" />
         <meta
           property="og:description"
-          content="Snag some fantastic doodles for your websites, apps or designs!"
+          content="ChatNova will help you to build a custom AI Chatbot with full authentication and database management flow in a just few minutes"
         />
         <meta property="og:url" content="https://www.chatnova.co" />
         <meta property="og:site_name" content="ChatNova" />
-        <meta property="og:image" content="/og.png" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:width" content="1200" />
+        <meta property="og:image" content="https://shipfa.st/shareMain.png" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="https://www.chatnova.co" />
         <meta name="twitter:title" content="ChatNova" />
         <meta
           name="twitter:description"
-          content="Snag some fantastic doodles for your websites, apps or designs!"
+          content="ChatNova will help you to build a custom AI Chatbot with full authentication and database management flow in a just few minutes!"
         />
         <meta name="twitter:image" content="/og.png" />
         <meta name="next-size-adjust" />

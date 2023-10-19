@@ -7,7 +7,7 @@ export const Hero = () => {
   return (
     <div className="min-h-screen flex justify-center overflow-hidden items-center">
       <div className="container relative">
-        <div className="absolute -right-40 top-0 bottom-0 items-center hidden lg:flex">
+        <div className="absolute -right-36 top-0 bottom-0 items-center hidden lg:flex">
           <Image
             placeholder="blur"
             width={500}

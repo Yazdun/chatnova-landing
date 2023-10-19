@@ -42,17 +42,15 @@ const Slider = () => {
   const [activeTab, setActiveTab] = useState(0)
   const [isClicked, setIsClicked] = useState(false)
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      if (!isClicked) {
-        setActiveTab(prevTab => (prevTab + 1) % data.length)
-      }
-    }, 10000)
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setActiveTab(prevTab => (prevTab + 1) % data.length)
+  //   }, 10000)
 
-    return () => {
-      clearInterval(timer)
-    }
-  }, [])
+  //   return () => {
+  //     clearInterval(timer)
+  //   }
+  // }, [])
 
   const handleTabClick = (index: number) => {
     setActiveTab(index)
