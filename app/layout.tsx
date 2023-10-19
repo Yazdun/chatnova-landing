@@ -30,7 +30,10 @@ export default function RootLayout({
         />
         <meta property="og:url" content="https://chatnova.co" />
         <meta property="og:site_name" content="Chat Nova" />
-        <meta property="og:image" content="https://shipfa.st/shareMain.png" />
+        <meta
+          property="og:image"
+          content="https://chatnova.vercel.app/og.png"
+        />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="https://chatnova.co" />
