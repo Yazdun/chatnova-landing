@@ -12,14 +12,16 @@ export const Video = () => {
         short video ( Kai is too slow 3x the video 😒 )
       </p>
 
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/pqTcEirVWco?si=LAS3ZwOKkO7iyJb2"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      ></iframe>
+      <div className="max-w-[560px] w-full">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/pqTcEirVWco?si=LAS3ZwOKkO7iyJb2"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </div>
     </div>
   )
 }

@@ -15,6 +15,7 @@ import {
   SiTailwindcss,
 } from 'react-icons/si'
 import { PiCrownSimpleBold } from 'react-icons/pi'
+import { AnimatePresence, motion } from 'framer-motion'
 
 export const Features = () => {
   return (
@@ -81,27 +82,43 @@ const Slider = () => {
       <div className="bg-neutral-900 border-t-2 border-neutral-800 border-b-2  py-10">
         <div className="container grid gap-5">
           <ul className="flex text-lg text-white">
-            {data[activeTab].tech.map((item, idx) => {
-              return (
-                <li key={item.title} className="flex items-center gap-1">
-                  {idx > 0 && <span className="ml-1">+</span>}
-                  <div>{item.icon}</div>
-                  {item.title}
-                </li>
-              )
-            })}
+            <AnimatePresence mode="wait" initial={false}>
+              {data[activeTab].tech.map((item, idx) => {
+                return (
+                  <motion.li
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    key={item.title}
+                    className="flex items-center gap-1"
+                  >
+                    {idx > 0 && <span className="ml-1">+</span>}
+                    <div>{item.icon}</div>
+                    {item.title}
+                  </motion.li>
+                )
+              })}
+            </AnimatePresence>
           </ul>
           <ul className="grid gap-3 text-neutral-300">
-            {data[activeTab].items.map(item => {
-              return (
-                <li key={item} className="flex gap-2">
-                  <div className="mt-1 text-green-300">
-                    <AiOutlineCheck />
-                  </div>
-                  {item}
-                </li>
-              )
-            })}
+            <AnimatePresence mode="wait" initial={false}>
+              {data[activeTab].items.map(item => {
+                return (
+                  <motion.li
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    key={item}
+                    className="flex gap-2"
+                  >
+                    <div className="mt-1 text-green-300">
+                      <AiOutlineCheck />
+                    </div>
+                    {item}
+                  </motion.li>
+                )
+              })}
+            </AnimatePresence>
           </ul>
         </div>
       </div>

@@ -5,8 +5,8 @@ import HERO from '@/assets/hero.png'
 
 export const Hero = () => {
   return (
-    <div className="min-h-screen flex justify-center items-center">
-      <div className="container relative ">
+    <div className="min-h-screen flex justify-center overflow-hidden items-center">
+      <div className="container relative">
         <div className="absolute -right-40 top-0 bottom-0 items-center hidden lg:flex">
           <Image
             placeholder="blur"
@@ -39,10 +39,14 @@ export const Hero = () => {
           </p>
           <div className="flex gap-5 items-center">
             <Button asChild variant="soft" size="3">
-              <a href="#">Get Started</a>
+              <a href="https://github.com/Kyler18/chat-nova" target="_blank">
+                Get Started
+              </a>
             </Button>
             <Button asChild variant="ghost" color="gray" size="3" highContrast>
-              <a href="#">Give it a Star! ⭐️</a>
+              <a href="https://github.com/Kyler18/chat-nova" target="_blank">
+                Give it a Star! ⭐️
+              </a>
             </Button>
           </div>
         </div>
