@@ -1,3 +1,4 @@
+import { Cards } from '@/components/cards'
 import { LandingQaClient } from '@/components/faq'
 import { Features } from '@/components/features'
 import { Hero } from '@/components/hero'
@@ -8,6 +9,7 @@ export default function Home() {
     <main>
       <Hero />
       <Features />
+      <Cards />
       <Video />
       <LandingQaClient />
     </main>

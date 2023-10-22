@@ -14,8 +14,10 @@ import { Text } from '@radix-ui/themes'
 export const LandingQaClient = () => {
   return (
     <section className="container">
-      <div className="space-y-3 pb-5 text-center ">
-        <h2 className="text-xl font-bold">Frequently Asked Questions</h2>
+      <div className="pb-5 space-y-3 text-center">
+        <h2 className="text-2xl text-center lg:text-4xl">
+          Frequently Asked Questions
+        </h2>
         <p>
           If you have any more questions, feel free to reach out to{' '}
           <Text asChild color="blue">
@@ -31,12 +33,12 @@ export const LandingQaClient = () => {
         </p>
       </div>
       <Separator size="4" />
-      <Accordion type="multiple">
+      <Accordion type="single">
         {faq.map(({ question, answer }) => {
           return (
             <AccordionItem key={question} value={question}>
               <AccordionTrigger>{question}</AccordionTrigger>
-              <AccordionContent className="text-zinc-400 leading-7">
+              <AccordionContent className="leading-7 text-zinc-400">
                 {answer}
               </AccordionContent>
             </AccordionItem>

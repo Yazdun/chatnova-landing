@@ -21,8 +21,8 @@ export const Features = () => {
   return (
     <div className="grid gap-10 mb-20">
       <div className="container grid gap-5 text-center">
-        <h2 className="text-2xl lg:text-4xl max-w-xl m-auto flex flex-col items-center">
-          <div className=" text-orange-400 rotate-10">
+        <h2 className="flex flex-col items-center max-w-xl m-auto text-2xl lg:text-4xl">
+          <div className="text-orange-400  rotate-10">
             <PiCrownSimpleBold />
           </div>
           Build and ship custom AI chatbots in minutes
@@ -59,7 +59,7 @@ const Slider = () => {
 
   return (
     <div className="grid gap-10 ">
-      <ul className="container grid grid-cols-3 md:grid-cols-5 gap-2">
+      <ul className="container grid grid-cols-3 gap-2 md:grid-cols-5">
         {data.map((item, index) => (
           <li className="w-full" key={index}>
             <button
@@ -77,7 +77,7 @@ const Slider = () => {
           </li>
         ))}
       </ul>
-      <div className="bg-neutral-900 border-t-2 border-neutral-800 border-b-2  py-10">
+      <div className="py-10 border-t-2 border-b-2 bg-neutral-900 border-neutral-800">
         <div className="container grid gap-5">
           <ul className="flex text-lg text-white">
             <AnimatePresence mode="wait" initial={false}>
