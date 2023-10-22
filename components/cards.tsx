@@ -4,35 +4,45 @@ import React from 'react'
 import { AiFillThunderbolt } from 'react-icons/ai'
 import { BsDatabaseFillLock, BsDatabaseLock } from 'react-icons/bs'
 import { FaUserShield } from 'react-icons/fa'
+import { Calendly } from './calendly'
 
 export const Cards = () => {
   return (
     <div className="container space-y-5">
       <div className="flex flex-col items-center gap-5">
-        <h2 className="max-w-xl text-2xl text-center lg:text-4xl">
-          Fast and Secure, Launch an AI Chatbot in Minutes!
+        <h2 className="flex flex-col items-center max-w-xl gap-2 text-2xl text-center lg:text-4xl">
+          <span>You're not a Developer?</span>
+          <span className="flex px-5 py-2 rounded-md bg-slate-100 -rotate-1 text-zinc-700">
+            We Got Your Back!
+          </span>
         </h2>
         <p className="max-w-2xl text-center">
-          Chat Nova will help you to build a custom AI Chatbot with full
-          authentication and database management flow in a just few minutes
+          We are here to guide you through the process, We provide comprehensive
+          support, from initial setup to fine-tuning, so you can make the most
+          out of your chatbot's potential.
         </p>
       </div>
-      <ul className="grid gap-3 lg:grid-cols-3">
-        {data.map(item => {
-          return (
-            <li
-              key={item.title}
-              className="p-[0.08rem] rounded-md bg-gradient-to-tr from-zinc-700 via-transparent to-zinc-700"
-            >
-              <div className="flex flex-col items-center h-full gap-5 p-5 rounded-md text-zinc-100 bg-neutral-900">
-                <div className={clsx(item.color, 'text-6xl')}>{item.icon}</div>
-                <h2 className="text-lg">{item.title}</h2>
-                <p className="text-center text-zinc-400">{item.desc}</p>
-              </div>
-            </li>
-          )
-        })}
-      </ul>
+      <div className="space-y-3">
+        <Calendly />
+        <ul className="grid gap-3 lg:grid-cols-3">
+          {data.map(item => {
+            return (
+              <li
+                key={item.title}
+                className="p-[0.08rem] rounded-md bg-gradient-to-tr from-zinc-700 via-transparent to-zinc-700"
+              >
+                <div className="flex flex-col items-center h-full gap-5 p-5 rounded-md text-zinc-100 bg-neutral-900">
+                  <div className={clsx(item.color, 'text-6xl')}>
+                    {item.icon}
+                  </div>
+                  <h2 className="text-lg">{item.title}</h2>
+                  <p className="text-center text-zinc-400">{item.desc}</p>
+                </div>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
     </div>
   )
 }
