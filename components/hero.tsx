@@ -54,6 +54,7 @@ export const Hero = () => {
                 Get Started
               </a>
             </Button>
+
             <Button asChild variant="ghost" color="gray" size="3" highContrast>
               <a href="https://github.com/Kyler18/chat-nova" target="_blank">
                 Give it a Star! ⭐️
