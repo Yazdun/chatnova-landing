@@ -45,8 +45,8 @@ export const Hero = () => {
             Chat Nova will help you to build a custom{' '}
             <span className="text-white">AI Chatbot</span> with{' '}
             <span className="text-white"> full authentication</span> and{' '}
-            <span className="text-white">database management</span> flow in a
-            just few minutes
+            <span className="text-white">database management</span> flow in just
+            a few minutes
           </p>
           <div className="flex items-center gap-5">
             <Button asChild variant="soft" size="3">
