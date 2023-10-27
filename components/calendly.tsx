@@ -46,13 +46,7 @@ export const Calendly = () => {
             You can schedule a call with us to discuss your requirement, and we
             will get back to you with a quote.
           </p>
-          <Button
-            asChild
-            color="blue"
-            variant="soft"
-            className="space-x-2"
-            size="3"
-          >
+          <Button asChild variant="soft" className="space-x-2" size="3">
             <a href="https://calendly.com/yazdun/30min" target="_blank">
               <AiFillCalendar className="mb-1" />
               Book a Call

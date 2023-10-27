@@ -1,3 +1,4 @@
+import { Banner } from '@/components/banner'
 import { Cards } from '@/components/cards'
 import { LandingQaClient } from '@/components/faq'
 import { Features } from '@/components/features'
@@ -12,6 +13,7 @@ export default function Home() {
       <Cards />
       <Video />
       <LandingQaClient />
+      <Banner />
     </main>
   )
 }
